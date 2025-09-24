@@ -2,7 +2,7 @@
 var spec = "week9_hw.json";
 
 // Embed the map
-vegaEmbed("#msia_map", spec, { actions: false })
+vegaEmbed("#msia_map", spec)
   .then(function(result) {
     console.log("Map loaded successfully!");
   })
