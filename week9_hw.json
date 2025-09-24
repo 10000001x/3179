@@ -52,8 +52,8 @@
         "color": {
           "field": "arrivals_norm",
           "type": "quantitative",
-          "scale": {"scheme": "blues", "domain": [0, 1], "type": "quantile"},
-          "title": "Normalized Arrivals (0-1)"
+          "scale": {"scheme": "blues", "type": "quantile"},
+          "title": "Normalized Arrivals"
         },
         "tooltip": [
           {"field": "properties.name", "title": "State"},
