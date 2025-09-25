@@ -4,10 +4,12 @@
   "width": 800,
   "height": 400,
 
+  "view": {"stroke": "transparent", "fill": "#cce5ff"},
+
   "layer": [
     {
-      "data": {"graticule": {"step": [30, 30]}},
-      "mark": {"type": "geoshape", "stroke": "#cccccc", "strokeWidth": 0.5}
+      "data": {"graticule": {"step": [2, 2], "extent": [[98, -2], [122, 10]]}},
+      "mark": {"type": "geoshape", "stroke": "#cccccc", "strokeWidth": 1.0}
     },
     {
 
@@ -52,7 +54,7 @@
         "color": {
           "field": "arrivals_norm",
           "type": "quantitative",
-          "scale": {"scheme": "blues", "type": "quantile"},
+          "scale": {"scheme": "greens", "type": "linear"},
           "title": "Normalized Arrivals"
         },
         "tooltip": [
@@ -62,7 +64,7 @@
           {"field": "log_arrivals", "title": "Log Arrivals", "format": ".2f"}
         ]
       },
-      "projection": {"type": "mercator", "scale": 1800, "center": [110, 4]}
+      "projection": {"type": "identity", "reflectY": true}
     }
   ]
 }
